@@ -39,7 +39,7 @@ alpha_current                                1.5              # X stepper motor 
 alpha_max_rate                               30000.0          # Maximum rate in mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
-beta_dir_pin                                 0.11             # Pin for beta stepper direction, add '!' to reverse direction
+beta_dir_pin                                 0.11!             # Pin for beta stepper direction, add '!' to reverse direction
 beta_en_pin                                  0.10             # Pin for beta enable
 beta_current                                 1.5              # Y stepper motor current
 beta_max_rate                                30000.0          # Maxmimum rate in mm/min
@@ -330,9 +330,6 @@ custom_menu.power_off.command              M81               #
 #network.ip_gateway                           192.168.3.2     # The gateway address
 #network.mac_override                         xx.xx.xx.xx.xx.xx  # Override the mac address, only do this if you have a conflict
 
-
-
-
 network.enable                               true             # enable the ethernet network services
 network.webserver.enable                     true             # enable the webserver
 network.telnet.enable                        true             # enable the telnet server
@@ -340,15 +337,6 @@ network.plan9.enable                         true             # enable the plan9
 network.ip_address                           192.168.3.4    # the IP address
 network.ip_mask                              255.255.255.0    # the ip mask
 network.ip_gateway                           192.168.3.2      # the gateway address
-
-
-
-
-
-
-
-
-
 
 ## System configuration
 # Serial communications configuration ( baud rate defaults to 9600 if undefined )
